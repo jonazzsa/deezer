@@ -1,0 +1,11 @@
+<deezer-header>
+    <deezer-search (searchArtists)="seachArtists($event)"></deezer-search>
+</deezer-header>
+<deezer-home-container>
+    <deezer-home-heading [searchQuery]="searchQuery"></deezer-home-heading>
+    <deezer-home-cards>
+        <deezer-no-results *ngIf="artistsData.length === 0" search="Nothing found"></deezer-no-results>
+        <deezer-artists-card (click)="goToDetails(artist.id)" *ngFor="let artist of artistsData; let i = index"
+            [artistInfo]="{name: artist.name, cover: artist.cover}"></deezer-artists-card>
+    </deezer-home-cards>
+</deezer-home-container>

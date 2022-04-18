@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: linear-gradient(56deg,#0087c1 13%,#89d7bb);
+    border-radius: 16px;
+    box-shadow: 0 1px 3px #666;
+    color: #fff;
+    padding: 8px 16px;
+    border: solid 1px transparent;
+    margin: 16px;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+        border: solid 1px #0087c1;
+        color: #0087c1;
+        background: white;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #ef546624;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ef54667d;
+    border-radius: 10px;
+  }
+
+  .color-red {
+      color: red
+  }

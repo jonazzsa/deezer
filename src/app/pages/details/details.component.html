@@ -1,0 +1,22 @@
+<deezer-header>
+    <deezer-back></deezer-back>
+    <h1>{{artist.name}}</h1>
+</deezer-header>
+<deezer-main>
+    <deezer-details-tracks>
+        <deezer-artists-card-details [artistInfo]="{name: artist.name, cover: artist.cover, fans: artist.fans}">
+        </deezer-artists-card-details>
+        <deezer-top-tracks title="Top Tracks">
+            <deezer-tracklist *ngFor="let track of topTracks; let i = index"
+                [topTrackInfo]="{index: i, duration: track.duration, title: track.title, preview: track.preview}"></deezer-tracklist>
+        </deezer-top-tracks>
+    </deezer-details-tracks>
+    <deezer-album-container>
+        <h2>Albums</h2>
+        <deezer-album-list>
+            <deezer-album *ngFor="let album of albums; let i = index"
+                [albumInfo]="{title: album.title, cover: album.cover, date: album.date}">
+            </deezer-album>
+        </deezer-album-list>
+    </deezer-album-container>
+</deezer-main>

@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-image">
+        <img src="{{artistInfo.cover}}" alt="{{artistInfo.name}}"/>
+    </div>
+    <div class="card-info" *ngIf="artistInfo.name">
+        <h2> <i class="fa fa-microphone"></i><br /> {{artistInfo.name}}</h2>
+    </div>
+</div>

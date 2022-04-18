@@ -1,0 +1,57 @@
+.card {
+    @media screen and (min-width: 500px) {
+         width: 20vw;
+         max-width: 206px;
+    }
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    .card-image { 
+        width: 100%;
+        @media screen and (min-width: 500px) {       
+        width: 20vw;
+        height: 20vw;
+         max-width: 206px;
+        max-height: 206px;
+        }
+       
+        background-color: black;
+        animation: loader 2s infinite;
+        @keyframes loader {
+            from {background-color: #ccc}
+            to {background-color: #000;}
+            
+          }
+
+        img {
+            width: 100%;
+            position: relative;
+            
+        }
+    }
+
+    .card-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(transparent, 
+        rgba(0, 0, 0, .5), rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));
+        width: 100%;
+        padding: 16px 4px;
+        color: white;
+
+        h2 {
+            margin: 0;
+            font-weight: 100;
+            font-size: .8rem;
+            color: white;
+        }
+
+        span {
+            font-size: .7rem;
+        }
+    }
+
+    
+}

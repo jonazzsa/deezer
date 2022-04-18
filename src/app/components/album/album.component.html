@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-image">
+        <img  *ngIf="albumInfo.cover" title="{{albumInfo.title}}" src="{{albumInfo.cover}}" alt="{{albumInfo.title}}"/>
+    </div>
+    <div class="card-info" *ngIf="albumInfo.title">
+        <h3 title="{{albumInfo.title}}"> {{albumInfo.title | continue: 12}}</h3>
+        <span>  <i class="fa fa-calendar"></i> {{albumInfo.date | date: 'yyyy'}}</span>
+    </div>
+</div>

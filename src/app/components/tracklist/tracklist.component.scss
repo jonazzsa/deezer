@@ -1,0 +1,34 @@
+li {
+    color: rgba(255, 255, 255, .8);
+    border-bottom: solid 1px rgba(255, 255, 255, .15);
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    align-items: center;
+}
+
+.bullets {
+    font-weight: bold;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 50%;
+}
+
+audio {
+    width: 185px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, .8);
+    color: white
+}

@@ -1,0 +1,20 @@
+.search {
+    @media screen and (min-width: 500px) {
+        width: 400px;
+    }
+    padding: 8px 0;
+    display: flex;
+    font-size: 1.2rem;
+    input {
+        border: none;
+        width: calc(100% - 20px);
+        outline: none;
+        background-color: transparent;        
+        font-size: 1.2rem;
+        padding-left: 8px;
+
+        &::placeholder{
+            font-style: italic;
+        }
+    }
+}

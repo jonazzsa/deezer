@@ -1,0 +1,6 @@
+.album-list {
+    @media screen and (min-width: 500px) {
+        display: flex;
+    }
+    overflow-x: scroll;
+}

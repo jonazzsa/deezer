@@ -1,0 +1,8 @@
+.home-cards {  
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 500px) {
+        justify-content: space-between;
+        display: flex;
+    }
+}
